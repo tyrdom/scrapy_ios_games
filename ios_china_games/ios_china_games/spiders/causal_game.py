@@ -38,7 +38,7 @@ class CausalGameSpider(scrapy.Spider):
         icons = main.xpath('./section[1]/div/div[1]/picture/source/@srcset').extract_first()
         icon = icons.split(',')[0][0:-3]
         # print(icon)
-        item['name'] = name
+        item['name'] = name.strip()
         item['author'] = author
         item['info'] = info
         item['icon_url'] = icon
