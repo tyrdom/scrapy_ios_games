@@ -1,0 +1,13 @@
+CREATE TABLE `ios_model_table` (
+  `id` int(10) unsigned PRIMARY KEY AUTO_INCREMENT,
+  `name` char(100) NOT NULL DEFAULT '',
+  `author` varchar(100) DEFAULT NULL,
+  `info` text NOT NULL,
+  `icon_local` varchar(255) DEFAULT NULL,
+  `pic1_local` varchar(255) DEFAULT NULL,
+  `pic2_local` varchar(255) DEFAULT NULL,
+  `pic3_local` varchar(255) DEFAULT NULL,
+  `pic4_local` varchar(255) DEFAULT NULL,
+  `pic5_local` varchar(255) DEFAULT NULL,
+  `create_time` datetime NOT NULL DEFAULT NOW()
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
