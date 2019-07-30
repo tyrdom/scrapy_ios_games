@@ -17,7 +17,7 @@ NEWSPIDER_MODULE = 'ios_china_games.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = 'ios_china_games (+http://www.yourdomain.com)'
-
+COMMANDS_MODULE = 'ios_china_games.commands'
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
 
